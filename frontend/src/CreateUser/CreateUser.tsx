@@ -10,7 +10,7 @@ export function CreateUser() {
   const images: JSX.Element[] = [];
 
   return (   
-    <form method="post" action="http://localhost:3001/users/create">
+    <form>
         <label>
             Name: <input type="text" name="name"/>
         </label>
@@ -26,7 +26,9 @@ export function CreateUser() {
         <label>
             Profile Image: <input type="text" name="profileImageUrl"/>
         </label>
+
         <button type="submit">Submit</button>
+
     </form>
   );
 }
