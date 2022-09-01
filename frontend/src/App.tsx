@@ -41,6 +41,9 @@ function App() {
         <Route path="/users/create"
           element={<CreateUser/>}>
         </Route>
+        <Route path="/posts/:postId/like"
+          element={<CreateUser/>}>
+        </Route>
 
       </Routes>
       </main>
