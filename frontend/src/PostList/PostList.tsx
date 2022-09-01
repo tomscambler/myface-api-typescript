@@ -15,9 +15,13 @@ export function PostList() {
 
       <div className = "post" key={myData?.results[i].id}>
 
-        <h2>{myData?.results[i].message}</h2>
         <img src = {myData?.results[i].imageUrl}></img>
-        <p>Posted by: {myData?.results[i].postedBy.username}</p>
+        <div className = 'posttext'>
+            <h2> {myData?.results[i].postedBy.username}</h2>
+            <p className = "createdAt"> {myData?.results[i].createdAt.slice(0,10)}</p>
+            <p>{myData?.results[i].message}</p>
+        </div>
+        
 
       </div>
     )
