@@ -1,7 +1,11 @@
 @use 'hamburger';
 
 $post-background : #151820;
+$primary: #2985FF;
 
+nav{
+  height:100%;
+}
 
 main {
   margin: 0 auto;
@@ -12,6 +16,9 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  h1{
+    margin:0;
+  }
 }
 
 #root {

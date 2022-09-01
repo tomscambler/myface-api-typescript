@@ -1,39 +1,33 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
+$primary-color: #2985FF;
+$post-background : #151820;
  
  #menuToggle
  {
    display: block;
-   position: relative;
+   position: fixed;
    top: 50px;
    left: 50px;
+   height:100%;
    
    z-index: 1;
    
    -webkit-user-select: none;
    user-select: none;
+
+
  }
  
  #menuToggle a
  {
    text-decoration: none;
-   color: #232323;
+   color: #cdcdcd;
    
    transition: color 0.3s ease;
  }
  
  #menuToggle a:hover
  {
-   color: tomato;
+   color: $primary-color;
  }
  
  
@@ -95,7 +89,7 @@
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background: #cdcdcd;
  }
  
  /*
@@ -122,12 +116,13 @@
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 100px;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
+   height:100%;
    
-   background: #ededed;
+   background: $post-background;;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */

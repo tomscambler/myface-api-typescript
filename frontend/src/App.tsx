@@ -11,7 +11,7 @@ function App() {
   return (
 
     <Router>
-      <h1>This is MyFace</h1>
+      
 
       <nav role="navigation">
         <div id="menuToggle">
@@ -30,7 +30,7 @@ function App() {
 
 
       <main>
-
+      <h1>MyFace</h1>
       <Routes>
         <Route path="/posts"
           element={<PostList/>}>
