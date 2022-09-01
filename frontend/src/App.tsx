@@ -38,7 +38,7 @@ function App() {
         <Route path="/users"
           element={<UserList/>}>
         </Route>
-        <Route path="/createuser"
+        <Route path="/users/create"
           element={<CreateUser/>}>
         </Route>
 
