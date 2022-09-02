@@ -11,8 +11,6 @@ function App() {
   return (
 
     <Router>
-      
-
       <nav role="navigation">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -41,10 +39,12 @@ function App() {
         <Route path="/users/create"
           element={<CreateUser/>}>
         </Route>
-        <Route path="/posts/:postId/like"
+        {/* <Route path="/posts/:postId/like"
           element={<CreateUser/>}>
         </Route>
-
+        <Route path="/posts/:postId/dislike"
+          element={<CreateUser/>}>
+        </Route> */}
       </Routes>
       </main>
 
