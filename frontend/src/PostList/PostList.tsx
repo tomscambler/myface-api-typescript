@@ -43,6 +43,9 @@ export function PostList() {
             postId: post
         })
     })
+    fetch("http://localhost:3001/posts/")
+    .then(response => response.json())
+    .then(data => setMyData(data));
   }
 
   function changeLikeButton(){
@@ -72,7 +75,7 @@ export function PostList() {
                 </button>
                 <div>
                   {result.likedBy.map((like)=>{
-                      return like.name;
+                      return <p>{like.name}</p>;
                     }
                   )}
                 </div>
@@ -86,7 +89,7 @@ export function PostList() {
                   </button>
                   <div>
                     {result.dislikedBy.map((dislike)=>{
-                        return dislike.name;
+                        return <p>{dislike.name}</p>;
                       }
                     )}
                   </div>
