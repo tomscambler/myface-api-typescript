@@ -24,7 +24,7 @@ exports.up = function(knex) {
             table.integer('postId').notNullable();
             table.foreign('userId').references('users.id');
             table.foreign('postId').references('posts.id');
-            table.unique(['userId', 'postId']);
+            table.unique(['userId', 'postId', 'interactionType']);
         });
 }
 
